@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<style type="text/css">
+			.row{
+				width:100%;
+				display: flex;
+				flex-wrap:wrap;
+				margin: 1em auto;
+			}
+
+			.col-1{
+				width:100%;
+				margin: auto;
+			}
+
+			.col-2{
+				width:50%;
+				margin: auto;
+			}
+			#catarea{
+				max-width: 600px;
+				max-height: 500px;
+			}
+			#catarea > img{
+				max-width: 400px;
+				max-height: 300px;
+			}
+			.center{
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="row">
+			<div class="col-1 center">
+				<h1>Cat Clicker Premium</h1>
+				<p>This is a program of cat clicker click on one of those cat's name</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-2">
+				<h2>Cat List</h2>
+				<ul id="catlist">
+				</ul>		
+			</div>
+			<div class="col-2">
+				<div class="row">
+					<div class="col-1" id="catarea">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/engine_MOV.js"></script>
+	</body>
+</html>
